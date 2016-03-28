@@ -23,14 +23,14 @@ let client = new Coins({
 client.cryptoAccounts({}, (err, data) => {
     console.log(err || data);
     // =>
-    // [ { id: 'ffd371c559f24aa0a242ddd394a294c9',
+    // [ { id: 'ff...c9',
     //     name: 'Default Account',
     //     currency: 'BTC',
     //     balance: '0.09000000',
     //     pending_balance: '0.00000000',
     //     total_received: '0.10168800',
     //     default_address: '34SuY....yp6m' },
-    //   { id: '7874d16264f94c6fbee831c9b6c98283',
+    //   { id: '787...283',
     //     name: 'Default Account',
     //     currency: 'CLP',
     //     balance: '0.00000000',

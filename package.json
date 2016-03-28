@@ -1,0 +1,29 @@
+{
+  "name": "coins-ph",
+  "version": "1.0.0",
+  "description": "Coins.ph API wrapper for Node.js",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IonicaBizau/coins-ph.git"
+  },
+  "keywords": [
+    "coins",
+    "bitcoin",
+    "api",
+    "wrapper"
+  ],
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/coins-ph/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/coins-ph#readme",
+  "dependencies": {
+    "jsonrequest": "^4.0.0",
+    "request": "^2.69.0"
+  }
+}

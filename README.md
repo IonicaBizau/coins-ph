@@ -2,7 +2,7 @@
 
 > Coins.ph API wrapper for Node.js
 
-The [Coins.pw API Reference](https://coins.readme.io/v2.1/docs) is a good resource to learn more about these APIs.
+The [Coins.ph API Reference](https://coins.readme.io/v2.1/docs) is a good resource to learn more about these APIs.
 
 ## :cloud: Installation
 

@@ -26,6 +26,6 @@
     "request": "^2.69.0"
   },
   "blah": {
-      "description": "The [Coins.pw API Reference](https://coins.readme.io/v2.1/docs) is a good resource to learn more about these APIs."
+      "description": "The [Coins.ph API Reference](https://coins.readme.io/v2.1/docs) is a good resource to learn more about these APIs."
   }
 }

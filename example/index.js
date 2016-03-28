@@ -24,21 +24,22 @@ client.cryptoAccounts({}, (err, data) => {
     //     pending_balance: '0.00000000',
     //     total_received: '0.00000000',
     //     default_address: 'bf...129' } ]
-    client.payinOutlets({ region: "PH" }, (err, data) => {
-        console.log(err || data);
-        // =>
-        // [ { id: '..._deposit',
-        //     outlet_category: 'atm_deposit',
-        //     payment_outlet_type: {...},
-        //     amount_limits: [ [Object] ],
-        //     denominations: [],
-        //     name: '...',
-        //     region: '...',
-        //     verification_level_requirement: 0,
-        //     help_text: '...',
-        //     help_link: 'https://coinsph.zendesk.com/hc/en-us/articles/202637070',
-        //     instructions: '...',
-        //     payout_duration: null,
-        //     is_express: false }, ... ]
-    });
+});
+
+client.payinOutlets({ region: "PH" }, (err, data) => {
+    console.log(err || data);
+    // =>
+    // [ { id: '..._deposit',
+    //     outlet_category: 'atm_deposit',
+    //     payment_outlet_type: {...},
+    //     amount_limits: [ [Object] ],
+    //     denominations: [],
+    //     name: '...',
+    //     region: '...',
+    //     verification_level_requirement: 0,
+    //     help_text: '...',
+    //     help_link: 'https://coinsph.zendesk.com/hc/en-us/articles/202637070',
+    //     instructions: '...',
+    //     payout_duration: null,
+    //     is_express: false }, ... ]
 });

@@ -1,69 +1,6 @@
+## Documentation
 
-# coins-ph [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/coins-ph.svg)](https://www.npmjs.com/package/coins-ph) [![Downloads](https://img.shields.io/npm/dt/coins-ph.svg)](https://www.npmjs.com/package/coins-ph) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
-
-> Coins.ph API wrapper for Node.js
-
-The [Coins.ph API Reference](https://coins.readme.io/v2.1/docs) is a good resource to learn more about these APIs.
-
-## :cloud: Installation
-
-```sh
-$ npm i --save coins-ph
-```
-
-
-## :clipboard: Example
-
-
-
-```js
-const Coins = require("coins-ph");
-
-let client = new Coins({
-    key: process.env.COINS_PW_KEY
-  , secret: process.env.COINS_PW_SECRET
-});
-
-client.cryptoAccounts({}, (err, data) => {
-    console.log(err || data);
-    // =>
-    // [ { id: 'ff...c9',
-    //     name: 'Default Account',
-    //     currency: 'BTC',
-    //     balance: '0.09000000',
-    //     pending_balance: '0.00000000',
-    //     total_received: '0.10168800',
-    //     default_address: '34SuY....yp6m' },
-    //   { id: '787...283',
-    //     name: 'Default Account',
-    //     currency: 'CLP',
-    //     balance: '0.00000000',
-    //     pending_balance: '0.00000000',
-    //     total_received: '0.00000000',
-    //     default_address: 'bf...129' } ]
-});
-
-client.payinOutlets({ region: "PH" }, (err, data) => {
-    console.log(err || data);
-    // =>
-    // [ { id: '..._deposit',
-    //     outlet_category: 'atm_deposit',
-    //     payment_outlet_type: {...},
-    //     amount_limits: [ [Object] ],
-    //     denominations: [],
-    //     name: '...',
-    //     region: '...',
-    //     verification_level_requirement: 0,
-    //     help_text: '...',
-    //     help_link: 'https://coinsph.zendesk.com/hc/en-us/articles/202637070',
-    //     instructions: '...',
-    //     payout_duration: null,
-    //     is_express: false }, ... ]
-});
-```
-
-## :memo: Documentation
-
+You can see below the API reference of this module.
 
 ### `createBuyorder(data, cb)`
 Create a new buyorder
@@ -235,20 +172,3 @@ Low level function for making requests to the API endpoints.
     could be `api/v2` or `api/v3` too, depending on the endpoint.
 - **Function** `cb`: The callback function.
 
-
-
-## :yum: How to contribute
-Have an idea? Found a bug? See [how to contribute][contributing].
-
-
-## :scroll: License
-
-[MIT][license] © [Ionică Bizău][website]
-
-[paypal-donations]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RVXDDLKKLQRJW
-[donate-now]: http://i.imgur.com/6cMbHOC.png
-
-[license]: http://showalicense.com/?fullname=Ionic%C4%83%20Biz%C4%83u%20%3Cbizauionica%40gmail.com%3E%20(http%3A%2F%2Fionicabizau.net)&year=2016#license-mit
-[website]: http://ionicabizau.net
-[contributing]: /CONTRIBUTING.md
-[docs]: /DOCUMENTATION.md

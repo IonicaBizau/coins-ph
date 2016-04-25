@@ -1,6 +1,6 @@
 {
   "name": "coins-ph",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Coins.ph API wrapper for Node.js",
   "main": "lib/index.js",
   "scripts": {
@@ -26,6 +26,17 @@
     "request": "^2.69.0"
   },
   "blah": {
-      "description": "The [Coins.ph API Reference](https://coins.readme.io/v2.1/docs) is a good resource to learn more about these APIs."
-  }
+    "description": "The [Coins.ph API Reference](https://coins.readme.io/v2.1/docs) is a good resource to learn more about these APIs."
+  },
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ]
 }

@@ -24,6 +24,7 @@ const Coins = require("coins-ph");
 let client = new Coins({
     key: process.env.COINS_PW_KEY
   , secret: process.env.COINS_PW_SECRET
+  , host: process.env.COINS_HOST || "https://coins.ph/"
 });
 
 client.cryptoAccounts({}, (err, data) => {

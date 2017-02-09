@@ -2,6 +2,15 @@
 
 You can see below the API reference of this module.
 
+### `Coins(options)`
+Creates the instance of the `Coins` class.
+
+#### Params
+- **Object** `options`: An object containing:
+ - `secret` (String): The secret key (mandatory).
+ - `key` (String): The API key (mandatory)
+ - `host` (String): The `coins.ph` host (default: `https://coins.ph/`).
+
 ### `createBuyorder(data, cb)`
 Create a new buyorder
 

@@ -24,6 +24,8 @@ const Coins = require("coins-ph");
 let client = new Coins({
     key: process.env.COINS_PW_KEY
   , secret: process.env.COINS_PW_SECRET
+
+    // This is optional
   , host: process.env.COINS_HOST || "https://coins.ph/"
 });
 
@@ -67,6 +69,15 @@ client.payinOutlets({ region: "PH" }, (err, data) => {
 
 ## :memo: Documentation
 
+
+### `Coins(options)`
+Creates the instance of the `Coins` class.
+
+#### Params
+- **Object** `options`: An object containing:
+ - `secret` (String): The secret key (mandatory).
+ - `key` (String): The API key (mandatory)
+ - `host` (String): The `coins.ph` host (default: `https://coins.ph/`).
 
 ### `createBuyorder(data, cb)`
 Create a new buyorder

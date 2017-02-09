@@ -5,6 +5,9 @@ const Coins = require("../lib");
 let client = new Coins({
     key: process.env.COINS_PW_KEY
   , secret: process.env.COINS_PW_SECRET
+
+    // This is optional
+  , host: process.env.COINS_HOST || "https://coins.ph/"
 });
 
 client.cryptoAccounts({}, (err, data) => {

@@ -1,6 +1,6 @@
 {
   "name": "coins-ph",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Coins.ph API wrapper for Node.js",
   "main": "lib/index.js",
   "scripts": {

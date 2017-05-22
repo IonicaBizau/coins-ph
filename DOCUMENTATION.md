@@ -94,7 +94,7 @@ Retrieve an existing or a list of existing payment requests
 - **Object** `params`: The request params (documented [here](https://coins.readme.io/docs/payment-requests-1)).
 - **Function** `cb`: The callback function.
 
-### `createPaymentRequest(data, cb)`
+### `createTransferRequest(data, cb)`
 Transfer funds between two accounts
 
 #### Params

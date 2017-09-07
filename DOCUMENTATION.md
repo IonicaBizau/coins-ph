@@ -6,6 +6,7 @@ You can see below the API reference of this module.
 Creates the instance of the `Coins` class.
 
 #### Params
+
 - **Object** `options`: An object containing:
  - `secret` (String): The secret key (mandatory).
  - `key` (String): The API key (mandatory)
@@ -15,6 +16,7 @@ Creates the instance of the `Coins` class.
 Create a new buyorder
 
 #### Params
+
 - **Object** `data`: The order data as documented [here](https://coins.readme.io/docs/testinput).
 - **Function** `cb`: The callback function.
 
@@ -22,6 +24,7 @@ Create a new buyorder
 Mark a buy order as paid
 
 #### Params
+
 - **Object** `data`: The order data as documented [here](https://coins.readme.io/docs/buyorder-1).
 - **Function** `cb`: The callback function.
 
@@ -29,6 +32,7 @@ Mark a buy order as paid
 Retrieve an existing buyorder
 
 #### Params
+
 - **Object** `data`: The order data as documented [here](https://coins.readme.io/docs/buyorder).
 - **Function** `cb`: The callback function.
 
@@ -36,6 +40,7 @@ Retrieve an existing buyorder
 Create a new sellorder
 
 #### Params
+
 - **Object** `data`: The sell order data (documented [here](https://coins.readme.io/docs/sellorder)).
 - **Function** `cb`: The callback function.
 
@@ -43,6 +48,7 @@ Create a new sellorder
 Validate field values
 
 #### Params
+
 - **Object** `data`: The post data (documented [here](https://coins.readme.io/docs/validate-field)).
 - **Function** `cb`: The callback function.
 
@@ -50,6 +56,7 @@ Validate field values
 Retrieve an existing sellorder
 
 #### Params
+
 - **Object** `params`: The sell order params (documented [here](https://coins.readme.io/docs/sellorder-1)).
 - **Function** `cb`: The callback function.
 
@@ -57,12 +64,14 @@ Retrieve an existing sellorder
 Gets the transaction history (buyorders).
 
 #### Params
+
 - **Function** `cb`: The callback function.
 
 ### `payinOutlets(params, cb)`
 Retrieve supported payin-outlets
 
 #### Params
+
 - **Object** `params`: The request params (documented [here](https://coins.readme.io/docs/payin-outlets)).
 - **Function** `cb`: The callback function.
 
@@ -70,6 +79,7 @@ Retrieve supported payin-outlets
 Retrieve current payin-outlet-fees
 
 #### Params
+
 - **Object** `params`: The request params (documented [here](https://coins.readme.io/docs/payin-outlet-fees)).
 - **Function** `cb`: The callback function.
 
@@ -77,6 +87,7 @@ Retrieve current payin-outlet-fees
 Retrieve supported payin-outlet-categories
 
 #### Params
+
 - **Object** `params`: The request params (documented [here](https://coins.readme.io/docs/payin-outlet-categories)).
 - **Function** `cb`: The callback function.
 
@@ -84,6 +95,7 @@ Retrieve supported payin-outlet-categories
 Create a new payment request
 
 #### Params
+
 - **Object** `data`: The request data (documented [here](https://coins.readme.io/docs/payment-requests)).
 - **Function** `cb`: The callback function.
 
@@ -91,6 +103,7 @@ Create a new payment request
 Retrieve an existing or a list of existing payment requests
 
 #### Params
+
 - **Object** `params`: The request params (documented [here](https://coins.readme.io/docs/payment-requests-1)).
 - **Function** `cb`: The callback function.
 
@@ -98,6 +111,7 @@ Retrieve an existing or a list of existing payment requests
 Transfer funds between two accounts
 
 #### Params
+
 - **Object** `data`: The request data (documented [here](https://coins.readme.io/docs/transfers)).
 - **Function** `cb`: The callback function.
 
@@ -105,6 +119,7 @@ Transfer funds between two accounts
 Get the list of transfers or a specific one.
 
 #### Params
+
 - **Object** `params`: The params object (documented [here](https://coins.readme.io/docs/transfers-1)).
 - **Function** `cb`: The callback function.
 
@@ -112,6 +127,7 @@ Get the list of transfers or a specific one.
 Retrieve existing crypto-accounts
 
 #### Params
+
 - **Object** `params`: The params object (documented [here](https://coins.readme.io/docs/crypto-accounts)).
 - **Function** `cb`: The callback function.
 
@@ -119,6 +135,7 @@ Retrieve existing crypto-accounts
 Convert funds between a user's accounts
 
 #### Params
+
 - **Object** `data`: The data object (documented [here](https://coins.readme.io/docs/crypto-exchanges)).
 - **Function** `cb`: The callback function.
 
@@ -126,6 +143,7 @@ Convert funds between a user's accounts
 Retrieve current crypto-exchanges
 
 #### Params
+
 - **Object** `params`: The request params (documented [here](https://coins.readme.io/docs/crypto-exchanges)).
 - **Function** `cb`: The callback function.
 
@@ -133,12 +151,14 @@ Retrieve current crypto-exchanges
 Retrieve existing crypto-routes
 
 #### Params
+
 - **Function** `cb`: The callback function.
 
 ### `cryptoPayments(params, cb)`
 Get the crypto payments or a specific one.
 
 #### Params
+
 - **Object** `params`: The request params (documented [here](https://coins.readme.io/docs/crypto-payments)).
 - **Function** `cb`: The callback function.
 
@@ -146,6 +166,7 @@ Get the crypto payments or a specific one.
 Create a new user
 
 #### Params
+
 - **Object** `data`: The request data (documented [here](https://coins.readme.io/docs/user)).
 - **Function** `cb`: The callback function.
 
@@ -159,6 +180,7 @@ This is called internally.
 Signs a request.
 
 #### Params
+
 - **String** `url`: The request url.
 - **Object** `body`: The request data.
 
@@ -171,6 +193,7 @@ Signs a request.
 Low level function for making requests to the API endpoints.
 
 #### Params
+
 - **Object** `options`: An object containing the following fields:
  - `url` (String): The api endpoint.
  - `method` (String): The request method (default: `get`).

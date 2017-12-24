@@ -12,7 +12,11 @@ The [Coins.ph API Reference](https://coins.readme.io/v2.1/docs) is a good resour
 ## :cloud: Installation
 
 ```sh
-$ npm i --save coins-ph
+# Using npm
+npm install --save coins-ph
+
+# Using yarn
+yarn add coins-ph
 ```
 
 

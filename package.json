@@ -17,6 +17,9 @@
     "wrapper"
   ],
   "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
+  "contributors": [
+    "Jeff Paredes <imjeffparedes@gmail.com> (https://www.linkedin.com/in/imjeffparedes)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/IonicaBizau/coins-ph/issues"

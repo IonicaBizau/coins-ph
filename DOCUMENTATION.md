@@ -17,7 +17,7 @@ Create a new buyorder
 
 #### Params
 
-- **Object** `data`: The order data as documented [here](https://coins.readme.io/docs/testinput).
+- **Object** `data`: The order data as documented [here](https://coins.readme.io/docs/create-buyorder).
 - **Function** `cb`: The callback function.
 
 ### `markBuyorderPaid(data, cb)`
@@ -25,7 +25,7 @@ Mark a buy order as paid
 
 #### Params
 
-- **Object** `data`: The order data as documented [here](https://coins.readme.io/docs/buyorder-1).
+- **Object** `data`: The order data as documented [here](https://coins.readme.io/docs/update-buyorder).
 - **Function** `cb`: The callback function.
 
 ### `buyorder(data, cb)`
@@ -57,7 +57,7 @@ Retrieve an existing sellorder
 
 #### Params
 
-- **Object** `params`: The sell order params (documented [here](https://coins.readme.io/docs/sellorder-1)).
+- **Object** `params`: The sell order params (documented [here](https://coins.readme.io/docs/retrieve-sellorder)).
 - **Function** `cb`: The callback function.
 
 ### `transactionHistory(cb)`

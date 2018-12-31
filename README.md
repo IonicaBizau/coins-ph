@@ -249,7 +249,7 @@ Convert funds between a user's accounts
 
 #### Params
 
-- **Object** `data`: The data object (documented [here](https://coins.readme.io/docs/crypto-exchange)).
+- **Object** `data`: The data object (documented [here](https://coins.readme.io/docs/crypto-exchanges)).
 - **Function** `cb`: The callback function.
 
 ### `cryptoExchanges(params, cb)`

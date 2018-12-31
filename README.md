@@ -186,7 +186,8 @@ Retrieve supported payout-outlets
 - **Object** `params`: The request params (documented [here](https://coins.readme.io/docs/payout-outlets)).
 - **Function** `cb`: The callback function.
 
-### `payoutOutletCategories(params, cb)`
+### `payoutOutlets(params, cb)`
+payoutOutletCategories
 Retrieve supported payout-outlet-categories
 
 #### Params
@@ -194,8 +195,9 @@ Retrieve supported payout-outlet-categories
 - **Object** `params`: The request params (documented [here](https://coins.readme.io/docs/payout-outlet-categories)).
 - **Function** `cb`: The callback function.
 
-### `payoutOutletFees(params, cb)`
- Retrieve current payout-outlet-fees
+### `payinOutletFees(params, cb)`
+payoutOutletFees
+Retrieve current payout-outlet-fees
 
 #### Params
 
